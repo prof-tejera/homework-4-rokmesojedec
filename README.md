@@ -12,7 +12,7 @@ As you can tell the current layout needs a lot of styling work. Modify the layou
 
 1. Style the calculator however you want. Feel free to use any colors, layout, and animations that you would like. Be as creative as you want.
 2. Define all PropTypes for `Number`, `Operator`, and `Screen` components. If you add more components make sure to define the PropTypes.
-3. Deploy your application using any method you want (repo is setup for Github actions). Add the url: URL_TO_PROJECT
+3. Deploy your application using any method you want (repo is setup for Github actions). Add the url: [http://mesojedec.io:3005/cscie39/](http://mesojedec.io:3005/cscie39/)
 
 ### Deployment Instructions (Github actions)
 
