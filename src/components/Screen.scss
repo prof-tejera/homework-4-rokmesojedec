@@ -1,0 +1,20 @@
+@import "./../scss/variables";
+
+.screen {
+    box-shadow: $control-shadow;
+    border-radius: $rounded-amount * 0.75;
+    border: none;
+    min-height: 20px;
+    line-height: 20px;
+    text-align: right;
+    padding: 1.5rem 1rem;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    background: #0f2027; /* fallback for old browsers */
+    background: linear-gradient(
+        to right,
+        #eaf6fc,
+        rgb(179, 232, 255),
+        #cde3ec
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

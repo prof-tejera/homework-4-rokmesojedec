@@ -1,0 +1,57 @@
+@import "./../scss/variables";
+
+%button {
+    user-select: none;
+    box-shadow: $control-shadow;
+    border-radius: $rounded-amount;
+    padding: 0.5rem 1rem;
+    border: none;
+    width: 3rem;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    $number-color: #f1f3f4;
+    background-color: $number-color;
+    @extend %button;
+    &:hover {
+        background-color: darken($number-color, 5%);
+    }
+    &:active {
+        background-color: darken($number-color, 15%);
+        box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.operator {
+    font-weight: bold;
+    $operator-color: #dadce0;
+    background-color: $operator-color;
+    @extend %button;
+    &:hover {
+        background-color: darken($operator-color, 5%);
+    }
+    &:active {
+        background-color: darken($operator-color, 15%);
+        box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15);
+    }
+}
+
+
+.equal {
+    $operator-color: #4285f4;
+    color:white;
+    background-color: $operator-color;
+    @extend %button;
+    &:hover {
+        background-color: darken($operator-color, 5%);
+    }
+    &:active {
+        background-color: darken($operator-color, 15%);
+        box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15);
+    }
+}

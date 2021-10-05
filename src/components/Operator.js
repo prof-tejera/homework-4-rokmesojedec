@@ -1,20 +1,20 @@
 import { Component } from 'react';
-import styled from 'styled-components';
-
-const Container = styled.div`
-  padding: 10px;
-  border: 1px solid black;
-  width: 60px;
-`;
+import "./Buttons.scss";
+import PropTypes from 'prop-types';
 
 class Operator extends Component {
   render() {
     return (
-      <Container onClick={() => this.props.onClick(this.props.value)}>
+      <div className={["operator", this.props.className].join(" ")} onClick={() => this.props.onClick(this.props.value)}>
         {this.props.value}
-      </Container>
+      </div>
     );
   }
+}
+Operator.propTypes = {
+  className: PropTypes.string,
+  onClick: PropTypes.func.isRequired,
+  value: PropTypes.string.isRequired
 }
 
 export default Operator;
